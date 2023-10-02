@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Nth-Child Selector</title>
+    <style>
+      p {
+        font-size: 1.5em;
+      }
+      p:nth-child(1) {
+        color: red;
+      }
+      p:nth-child(3) {
+        color: blue;
+      }
+      p:first-child {
+        background-color: black;
+      }
+      p:nth-child(even) {
+        font-size: 30px;
+      }
+      p:nth-child(odd) {
+        text-transform: uppercase;
+      }
+      ul {
+        font-size: 1.5em;
+      }
+      ul li:nth-child(2n){
+        color:green;
+      }
+      ul li:nth-child(2n+1)
+      {
+        color: brown;
+      }
+      ul li:nth-child(n+4){
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+        laboriosam?
+      </p>
+      <p>Nobis tempora maxime laborum corporis? At autem ullam quidem eaque!</p>
+      <p>
+        Libero sit veniam architecto optio exercitationem nam corporis dolores
+        explicabo!
+      </p>
+      <p>
+        Mollitia iusto, accusantium voluptates soluta voluptatem dolorem magni
+        asperiores deserunt.
+      </p>
+      <p>
+        Reprehenderit modi culpa fugiat ullam vel! Iusto necessitatibus amet
+        suscipit.
+      </p>
+    </div>
+    <ul>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+    </ul>
+  </body>
+</html>

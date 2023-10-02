@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selector</title>
+    <style>
+        /*TÜM H1 ELEMENTLERİ*/
+        /*
+        h1{
+            color:red;
+            background-color: blue;
+        }
+        p{
+            color: red;
+            background-color: blue;
+        }*/
+        #logo, .lead{
+            color: red;
+            background-color: blue;
+        }
+        .info{
+            color: white;
+            background-color: black;
+        }
+        #para1.lead{
+            color:grey;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li a{
+            color: green;
+            font-weight: bold;
+        }
+        .info span{
+            color: red;
+        }
+        .info .primary{
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header 1</h1>
+        <h1 id="logo">Logo</h1>
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, fugiat.</p>
+    <p class="info">Lorem ipsum <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Quam, doloremque.</p>
+    <p class="info">Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Distinctio, soluta.</p>
+    <p>Test paragraph</p>
+    <a href="#">Home</a>
+</body>
+</html>
